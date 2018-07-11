@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="222">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="221">
+            <objects>
+                <viewController id="222" sceneMemberID="viewController" customClass="TipView" storyboardIdentifier="TipView" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="219"/>
+                        <viewControllerLayoutGuide type="bottom" id="220"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="223">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubTotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="226" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="26" y="116" width="76" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="227" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="26" y="154" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generosity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2112" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="26" y="207" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" id="2113" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="26" y="236" width="325" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2120" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="26" y="286" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="2105" firstItem="226" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="2106" firstItem="226" firstAttribute="top" secondItem="219" secondAttribute="bottom" constant="96"/>
+                            <constraint id="2107" firstItem="223" firstAttribute="trailingMargin" secondItem="226" secondAttribute="trailing" constant="257"/>
+                            <constraint id="2109" firstItem="223" firstAttribute="trailingMargin" secondItem="227" secondAttribute="trailing" constant="236"/>
+                            <constraint id="2110" firstItem="227" firstAttribute="top" secondItem="226" secondAttribute="centerY" constant="28"/>
+                            <constraint id="2111" firstItem="227" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="2114" firstItem="2112" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="2115" firstItem="2112" firstAttribute="top" secondItem="227" secondAttribute="bottom" constant="23"/>
+                            <constraint id="2116" firstItem="223" firstAttribute="trailingMargin" secondItem="2112" secondAttribute="trailing" constant="245"/>
+                            <constraint id="2117" firstItem="2113" firstAttribute="leading" secondItem="223" secondAttribute="leadingMargin" constant="12"/>
+                            <constraint id="2118" firstItem="2113" firstAttribute="top" secondItem="2112" secondAttribute="centerY" constant="18"/>
+                            <constraint id="2119" firstItem="223" firstAttribute="trailingMargin" secondItem="2113" secondAttribute="trailing" constant="10"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SubTotalTextField" destination="227" id="name-outlet-227"/>
+                        <outlet property="GenerositySlider" destination="2113" id="name-outlet-2113"/>
+                        <outlet property="TipLabel" destination="2120" id="name-outlet-2120"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="224" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="-402"/>
+        </scene>
+    </scenes>
+</document>
