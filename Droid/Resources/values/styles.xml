@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#ff4542</item>
+        <item name="colorPrimaryDark">#c7332c</item>
+        <item name="colorAccent">#42f2ff</item>
+    </style>
+
+    <style name="MenuTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#512DA8</item>
+        <item name="colorAccent">#00BCD4</item>
+    </style>
+    
+</resources>
