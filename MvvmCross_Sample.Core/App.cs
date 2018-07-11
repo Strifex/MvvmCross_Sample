@@ -15,7 +15,7 @@ namespace MvvmCross_Sample.Core
                 .RegisterAsLazySingleton();
 
             //Register App Entry Point
-            RegisterAppStart<TipViewModel>();
+            RegisterAppStart<MainViewModel>();
         }
     }
 }

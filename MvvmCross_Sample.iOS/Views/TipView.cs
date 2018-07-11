@@ -1,6 +1,6 @@
 ﻿using MvvmCross.Binding.BindingContext;
-using MvvmCross.Platforms.Ios.Presenters.Attributes;
 using MvvmCross.Platforms.Ios.Views;
+using MvvmCross.Plugin.Sidebar;
 using MvvmCross_Sample.Core.ViewModels;
 using System;
 using UIKit;
@@ -8,7 +8,7 @@ using UIKit;
 namespace Blank.Views
 {
     [MvxFromStoryboard("Main")]
-    [MvxRootPresentation(WrapInNavigationController = true)]
+    [MvxSidebarPresentation(MvxPanelEnum.Center, MvxPanelHintType.ResetRoot, true)]
     public partial class TipView : MvxViewController<TipViewModel>
     {
         public TipView(IntPtr handle) : base(handle)

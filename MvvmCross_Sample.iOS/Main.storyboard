@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="222">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2212">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
     </dependencies>
@@ -82,6 +82,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="224" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-164" y="-402"/>
+        </scene>
+        <scene sceneID="2211">
+            <objects>
+                <viewController id="2212" sceneMemberID="viewController" customClass="MainView" storyboardIdentifier="MainView" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2209"/>
+                        <viewControllerLayoutGuide type="bottom" id="2210"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2213">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2214" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="-407"/>
+        </scene>
+        <scene sceneID="3289">
+            <objects>
+                <viewController id="3290" sceneMemberID="viewController" storyboardIdentifier="MenuView" useStoryboardIdentifierAsRestorationIdentifier="YES" customClass="MenuView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3287"/>
+                        <viewControllerLayoutGuide type="bottom" id="3288"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3291">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3292" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="-401"/>
+        </scene>
+        <scene sceneID="4842">
+            <objects>
+                <viewController id="4843" sceneMemberID="viewController" storyboardIdentifier="SettingsView" useStoryboardIdentifierAsRestorationIdentifier="YES" customClass="SettingsView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4840"/>
+                        <viewControllerLayoutGuide type="bottom" id="4841"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4844">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This could be a settings page!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4919" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="41" y="50" width="239" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4922" firstItem="4919" firstAttribute="width" constant="239"/>
+                                </constraints>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="4920" firstItem="4919" firstAttribute="top" secondItem="4840" secondAttribute="bottom" constant="30"/>
+                            <constraint id="4921" firstItem="4919" firstAttribute="leading" secondItem="4844" secondAttribute="leadingMargin" constant="21"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4845" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="-397"/>
         </scene>
     </scenes>
 </document>
