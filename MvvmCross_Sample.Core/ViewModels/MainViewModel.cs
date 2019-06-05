@@ -1,4 +1,6 @@
-﻿using MvvmCross.ViewModels;
+﻿using MvvmCross;
+using MvvmCross.Navigation;
+using MvvmCross.ViewModels;
 
 namespace MvvmCross_Sample.Core.ViewModels
 {
@@ -6,8 +8,8 @@ namespace MvvmCross_Sample.Core.ViewModels
     {
         public void ShowMenu()
         {
-            NavigationService.Navigate<MenuViewModel>();
-            NavigationService.Navigate<TipViewModel>();
+            Mvx.IoCProvider.Resolve<IMvxNavigationService>().Navigate<MenuViewModel>();
+            Mvx.IoCProvider.Resolve<IMvxNavigationService>().Navigate<TipViewModel>();
         }
     }
 }
