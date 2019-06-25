@@ -93,12 +93,6 @@
     <Reference Include="Cirrious.FluentLayouts.Touch, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Cirrious.FluentLayout.2.9.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
     </Reference>
-    <Reference Include="MvvmCross, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.6.3.0\lib\xamarinios10\MvvmCross.dll</HintPath>
-    </Reference>
-    <Reference Include="MvvmCross.Plugin.Sidebar, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.Plugin.Sidebar.6.3.0\lib\xamarinios10\MvvmCross.Plugin.Sidebar.dll</HintPath>
-    </Reference>
     <Reference Include="SidebarNavigation, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SidebarNavigation.2.0.0\lib\xamarinios10\SidebarNavigation.dll</HintPath>
     </Reference>
@@ -106,6 +100,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="MvvmCross">
+      <HintPath>..\packages\MvvmCross.6.3.1\lib\xamarinios10\MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugin.Sidebar">
+      <HintPath>..\packages\MvvmCross.Plugin.Sidebar.6.3.1\lib\xamarinios10\MvvmCross.Plugin.Sidebar.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

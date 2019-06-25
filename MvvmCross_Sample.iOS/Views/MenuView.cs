@@ -85,13 +85,13 @@ namespace Blank.Views
 
         private void HomeButton_TouchUpInside(object sender, EventArgs e)
         {
-            var menu = Mvx.Resolve<IMvxSidebarViewController>();
+            var menu = Mvx.IoCProvider.Resolve<IMvxSidebarViewController>();
             menu?.CloseMenu();
         }
 
         private void _settingsButton_TouchUpInside(object sender, EventArgs e)
         {
-            var menu = Mvx.Resolve<IMvxSidebarViewController>();
+            var menu = Mvx.IoCProvider.Resolve<IMvxSidebarViewController>();
             menu?.CloseMenu();
         }
 
